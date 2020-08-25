@@ -1,0 +1,21 @@
+////Déclaration des variables
+$color: cyan;
+$max-width: 90%;
+$radius: 20px;
+$shadows: 5px 5px 20px;
+///Mise en place des régles
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: $max-width;
+    margin: auto;
+    margin-top: 15px;
+    border: 3px solid $color;
+    border-radius: $radius;
+    box-shadow: $shadows;
+    padding: 15px;
+}
+
+.navbar {
+    text-transform: uppercase;
+}

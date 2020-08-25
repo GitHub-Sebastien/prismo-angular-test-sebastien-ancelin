@@ -1,0 +1,25 @@
+////Déclaration des variables
+$color: cyan;
+$heigth: 800px;
+$width-xl: 80%;
+$radius: 20px;
+$shadows: 5px 5px 20px;
+$border-t: 30px;
+$title-size: 3.5em;
+///Mise en place des régles
+.container-fluid {
+    display: flex;
+    border: 3px solid $color;
+    border-radius: $radius;
+    margin: $border-t auto;
+    box-shadow: $shadows;
+    height: $heigth;
+    width: $width-xl;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    align-self: center;
+    font-size: $title-size;
+}
