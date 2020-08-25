@@ -6,11 +6,9 @@
         <div class="col-md-8">
             <div class="card-body">
                 <h5 class="card-title">{{ firstname }} {{ lastname }}</h5>
-                <a routerLink="/member/{{ id }}"><button class="btn btn-success">
-            Voir le profil
-          </button></a
-        >
-      </div>
+            </div>
+            <span class="member-function"> <b>Rôle </b>: {{ function }}</span>
+        </div>
+        <p class="description">{{ description }}</p>
     </div>
-  </div>
 </div>

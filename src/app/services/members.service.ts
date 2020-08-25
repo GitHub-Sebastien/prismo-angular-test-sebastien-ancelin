@@ -6,4 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class MemberService {
   public ArrayMembers = memberList;
+
+  getMemberById(id: number) {
+    const memberId = this.ArrayMembers.find((memberObject) => {
+      return memberObject.id === id;
+    });
+    return memberId;
+  }
 }

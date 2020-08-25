@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { MemberCardComponent } from './member-card/member-card.component';
 import { MemberService } from './services/members.service';
+import { MemberComponent } from './member/member.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MemberService } from './services/members.service';
     HeaderComponent,
     MemberListComponent,
     MemberCardComponent,
+    MemberComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [MemberService],
