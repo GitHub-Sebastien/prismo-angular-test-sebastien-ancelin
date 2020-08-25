@@ -7,12 +7,15 @@ import { Injectable } from '@angular/core';
 export class MemberService {
   public ArrayMembers = memberList;
 
+  //Récupére l'id du Json pour l'afficher dans le fragment :id
   getMemberById(id: number) {
     const memberId = this.ArrayMembers.find((memberObject) => {
       return memberObject.id === id;
     });
     return memberId;
   }
+
+  //Ajoute un membre au formulaire
   addMember(
     firstname: string,
     lastname: string,

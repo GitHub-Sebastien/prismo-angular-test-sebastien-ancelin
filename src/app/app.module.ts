@@ -1,8 +1,12 @@
+////Import des modules Angular
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+
+////Import des composants
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,8 +26,13 @@ import { FormComponent } from './form/form.component';
     MemberComponent,
     FormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [MemberService],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+  ],
+  providers: [MemberService], //// Déclaration du service
   bootstrap: [AppComponent],
 })
 export class AppModule {}

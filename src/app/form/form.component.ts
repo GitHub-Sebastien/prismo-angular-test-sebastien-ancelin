@@ -12,12 +12,16 @@ export class FormComponent implements OnInit {
   constructor(private memberService: MemberService, private router: Router) {}
 
   ngOnInit(): void {}
+
+  //Affectation des données du formulaire
   onSubmit(form: NgForm) {
     const firstname = form.value['firstname'];
     const lastname = form.value['lastname'];
     const role = form.value['role'];
     const description = form.value['description'];
     const avatar = form.value['avatar'];
+
+    //Utilisation de la méthode du service pour ajouter un membre
     this.memberService.addMember(
       firstname,
       lastname,
