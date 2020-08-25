@@ -1,0 +1,21 @@
+////Déclaration des variables
+$color: cyan;
+$width-xl: 80%;
+$radius: 20px;
+$shadows: 5px 5px 20px;
+$border-t: 30px;
+$title-size: 3.5em;
+///Mise en place des régles
+.container-fluid {
+    border: 3px solid $color;
+    border-radius: $radius;
+    margin: $border-t auto;
+    box-shadow: $shadows;
+    width: $width-xl;
+    padding: 15px;
+}
+
+.btn {
+    margin-left: 170px;
+    width: 20%;
+}

@@ -1,0 +1,26 @@
+////Déclaration des variables
+$img-size: 200px;
+$card-param: 3px solid green;
+///Mise en place des régles
+img {
+    width: $img-size;
+    height: $img-size;
+}
+
+.card {
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    border: $card-param;
+    border-radius: 20px;
+}
+
+.card-title {
+    line-height: 5;
+}
+
+.btn {
+    float: right;
+    margin-right: 50px;
+    width: 30%;
+}
