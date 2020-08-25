@@ -1,12 +1,15 @@
 ////Déclaration des variables
-$border-style: 3px solid cyan;
+$color: cyan;
+$heigth: 800px;
 $width-xl: 80%;
+$width-m: 60%;
 $radius: 20px;
 $shadows: 5px 5px 20px;
-$margin-t: 30px;
-$title-size: 3.5em;
+$margin-t: 40px;
+$border-style-form: 3px solid green;
+$border-style: 3px solid cyan;
 ///Mise en place des régles
-.container-fluid {
+.container {
     border: $border-style;
     border-radius: $radius;
     margin: $margin-t auto;
@@ -15,7 +18,16 @@ $title-size: 3.5em;
     padding: 15px;
 }
 
+form {
+    margin-top: $margin-t;
+}
+
+input,
+textarea {
+    width: $width-m;
+    border: $border-style-form;
+}
+
 .btn {
-    margin-left: 170px;
     width: 20%;
 }

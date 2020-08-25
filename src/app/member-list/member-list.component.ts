@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MemberService } from '../services/members.service';
+import { state, style, trigger, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-member-list',

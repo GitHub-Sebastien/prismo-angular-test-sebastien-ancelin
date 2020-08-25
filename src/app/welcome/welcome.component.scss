@@ -4,14 +4,14 @@ $heigth: 800px;
 $width-xl: 80%;
 $radius: 20px;
 $shadows: 5px 5px 20px;
-$border-t: 30px;
+$margin-t: 30px;
 $title-size: 3.5em;
 ///Mise en place des régles
 .container-fluid {
     display: flex;
     border: 3px solid $color;
     border-radius: $radius;
-    margin: $border-t auto;
+    margin: $margin-t auto;
     box-shadow: $shadows;
     height: $heigth;
     width: $width-xl;

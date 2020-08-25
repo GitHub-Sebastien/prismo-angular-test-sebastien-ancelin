@@ -1,5 +1,5 @@
 ////Déclaration des variables
-$border-t: 30px;
+$margin-t: 30px;
 $img-size: 200px;
 $card-param: 3px solid green;
 ///Mise en place des régles
@@ -11,7 +11,7 @@ img {
 .card {
     padding: 15px;
     width: 50%;
-    margin: $border-t auto;
+    margin: $margin-t auto;
     border: $card-param;
     border-radius: 20px;
 }
@@ -25,5 +25,5 @@ img {
 }
 
 .description {
-    margin-top: $border-t;
+    margin-top: $margin-t;
 }

@@ -1,4 +1,5 @@
 <div class="container-fluid">
     <app-member-card *ngFor="let members of listOfMember" [firstname]="members.firstname" [lastname]="members.lastname" [avatar]="members.avatar" [id]="members.id"></app-member-card>
-    <button class="btn btn-success">Ajouter un membre</button>
+    <a routerLink="/create-member"><button class="btn btn-success">Ajouter un membre</button>
+  </a>
 </div>
